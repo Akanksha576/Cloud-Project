@@ -10,7 +10,7 @@ keys = [
     "security-groups"
 ]
 
-print("✅ EC2 Instance Metadata:")
+print(" EC2 Instance Metadata:")
 for key in keys:
     try:
         response = requests.get(base_url + key, timeout=2)
